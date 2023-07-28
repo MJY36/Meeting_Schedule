@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Details & Meeting Scheduler</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="clientForm">
+            <h1>Client Details</h1>
+        
+           <label for="name">Name:</label>
+           <input type="text" id="name" required>
+           <br>
+           <label for="email">Email:</label>
+           <input type="email" id="email" required>
+           <br>
+           <label for="phone">Phone:</label>
+           <input type="tel" id="phone" required>
+           <br>
+           <label for="Address">Address:</label>
+           <input type="text" id="Address" required>
+           <br>
+           <label for="Organization">Organization:</label>
+           <input type="text" id="Oraganization" required>
+           <br>
+           <label for="Project">Project:</label>
+           <input type="text" id="Project" required>
+           <br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    
+        <form id="meetingForm">
+           <h1>Meeting Scheduler</h1>
+        
+            <label for="meetingDate">Meeting Date:</label>
+            <input type="date" id="meetingDate" required>
+            <br>
+            <label for="meetingTime">Meeting Time:</label>
+            <input type="time" id="meetingTime" required>
+            <br>
+            <label for="Client Name">Client Name:</label>
+            <input type="time" id="Client Name" required>
+            <br>
+            <label for="Meeting Location">Meeting Location:</label>
+            <input type="time" id="Meeting Location" required>
+            <br>
+            <label for="Meeting Topic">Meeting Topic:</label>
+            <input type="time" id="Meeting Topic" required>
+            <br>
+            <label for="meetingDuration">Meeting Duration :</label>
+            <input type="number" id="meetingDuration" required>
+            <br>
+        
+          <input type="submit" value="Schedule Meeting">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("clientForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+        });
+
+        document.getElementById("meetingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+        });
+    </script>
+</body>
+</html>
